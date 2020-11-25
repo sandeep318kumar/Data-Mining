@@ -1,0 +1,5 @@
+T1 a b * e
+T2 b d
+T3 a c * f
+T4 * d f
+T5 c d e

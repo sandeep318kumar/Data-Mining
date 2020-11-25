@@ -1,0 +1,15 @@
+class age income student credit_rating
+no youth high no fair
+no youth high no excellent
+yes middle high no fair
+yes senior medium no fair
+yes senior low yes fair
+no senior low yes excellent
+yes middle low yes excellent
+no youth medium no fair
+yes youth low yes fair
+yes senior medium yes fair
+yes youth medium yes excellent
+yes middle medium no excellent
+yes middle high yes fair
+no senior medium no excellent

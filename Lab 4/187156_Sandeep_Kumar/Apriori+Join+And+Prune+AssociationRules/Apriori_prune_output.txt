@@ -1,0 +1,82 @@
+The following are the most frequent itemsets:
+I1 
+I2 
+I3 
+I4 
+I5 
+I1 I2 
+I1 I3 
+I1 I4 
+I1 I5 
+I2 I3 
+I2 I4 
+I2 I5 
+I3 I5 
+I1 I2 I3 
+I1 I2 I4 
+I1 I2 I5 
+I1 I3 I5 
+I2 I3 I5 
+I1 I2 I3 I5 
+
+The following are the association rules for the most frequent itemsets:
+[ I1, ] --> [ I2, ] : support = 4, confidence = 66.6667
+[ I2, ] --> [ I1, ] : support = 4, confidence = 57.1429
+[ I1, ] --> [ I3, ] : support = 4, confidence = 66.6667
+[ I3, ] --> [ I1, ] : support = 4, confidence = 66.6667
+[ I1, ] --> [ I4, ] : support = 1, confidence = 16.6667
+[ I4, ] --> [ I1, ] : support = 1, confidence = 50
+[ I1, ] --> [ I5, ] : support = 2, confidence = 33.3333
+[ I5, ] --> [ I1, ] : support = 2, confidence = 100
+[ I2, ] --> [ I3, ] : support = 4, confidence = 57.1429
+[ I3, ] --> [ I2, ] : support = 4, confidence = 66.6667
+[ I2, ] --> [ I4, ] : support = 2, confidence = 28.5714
+[ I4, ] --> [ I2, ] : support = 2, confidence = 100
+[ I2, ] --> [ I5, ] : support = 2, confidence = 28.5714
+[ I5, ] --> [ I2, ] : support = 2, confidence = 100
+[ I3, ] --> [ I5, ] : support = 1, confidence = 16.6667
+[ I5, ] --> [ I3, ] : support = 1, confidence = 50
+[ I1, I2, ] --> [ I3, ] : support = 2, confidence = 50
+[ I1, I3, ] --> [ I2, ] : support = 2, confidence = 50
+[ I1, ] --> [ I2, I3, ] : support = 2, confidence = 33.3333
+[ I2, I3, ] --> [ I1, ] : support = 2, confidence = 50
+[ I2, ] --> [ I1, I3, ] : support = 2, confidence = 28.5714
+[ I3, ] --> [ I1, I2, ] : support = 2, confidence = 33.3333
+[ I1, I2, ] --> [ I4, ] : support = 1, confidence = 25
+[ I1, I4, ] --> [ I2, ] : support = 1, confidence = 100
+[ I1, ] --> [ I2, I4, ] : support = 1, confidence = 16.6667
+[ I2, I4, ] --> [ I1, ] : support = 1, confidence = 50
+[ I2, ] --> [ I1, I4, ] : support = 1, confidence = 14.2857
+[ I4, ] --> [ I1, I2, ] : support = 1, confidence = 50
+[ I1, I2, ] --> [ I5, ] : support = 2, confidence = 50
+[ I1, I5, ] --> [ I2, ] : support = 2, confidence = 100
+[ I1, ] --> [ I2, I5, ] : support = 2, confidence = 33.3333
+[ I2, I5, ] --> [ I1, ] : support = 2, confidence = 100
+[ I2, ] --> [ I1, I5, ] : support = 2, confidence = 28.5714
+[ I5, ] --> [ I1, I2, ] : support = 2, confidence = 100
+[ I1, I3, ] --> [ I5, ] : support = 1, confidence = 25
+[ I1, I5, ] --> [ I3, ] : support = 1, confidence = 50
+[ I1, ] --> [ I3, I5, ] : support = 1, confidence = 16.6667
+[ I3, I5, ] --> [ I1, ] : support = 1, confidence = 100
+[ I3, ] --> [ I1, I5, ] : support = 1, confidence = 16.6667
+[ I5, ] --> [ I1, I3, ] : support = 1, confidence = 50
+[ I2, I3, ] --> [ I5, ] : support = 1, confidence = 25
+[ I2, I5, ] --> [ I3, ] : support = 1, confidence = 50
+[ I2, ] --> [ I3, I5, ] : support = 1, confidence = 14.2857
+[ I3, I5, ] --> [ I2, ] : support = 1, confidence = 100
+[ I3, ] --> [ I2, I5, ] : support = 1, confidence = 16.6667
+[ I5, ] --> [ I2, I3, ] : support = 1, confidence = 50
+[ I1, I2, I3, ] --> [ I5, ] : support = 1, confidence = 50
+[ I1, I2, I5, ] --> [ I3, ] : support = 1, confidence = 50
+[ I1, I2, ] --> [ I3, I5, ] : support = 1, confidence = 25
+[ I1, I3, I5, ] --> [ I2, ] : support = 1, confidence = 100
+[ I1, I3, ] --> [ I2, I5, ] : support = 1, confidence = 25
+[ I1, I5, ] --> [ I2, I3, ] : support = 1, confidence = 50
+[ I1, ] --> [ I2, I3, I5, ] : support = 1, confidence = 16.6667
+[ I2, I3, I5, ] --> [ I1, ] : support = 1, confidence = 100
+[ I2, I3, ] --> [ I1, I5, ] : support = 1, confidence = 25
+[ I2, I5, ] --> [ I1, I3, ] : support = 1, confidence = 50
+[ I2, ] --> [ I1, I3, I5, ] : support = 1, confidence = 14.2857
+[ I3, I5, ] --> [ I1, I2, ] : support = 1, confidence = 100
+[ I3, ] --> [ I1, I2, I5, ] : support = 1, confidence = 16.6667
+[ I5, ] --> [ I1, I2, I3, ] : support = 1, confidence = 50

@@ -1,0 +1,29 @@
+The following are the most frequent itemsets:
+I1 
+I2 
+I3 
+I4 
+I1 I2 
+I1 I4 
+I2 I3 
+I2 I4 
+I3 I4 
+I2 I3 I4 
+
+The following are the association rules for the most frequent itemsets:
+[ I1, ] --> [ I2, ] : support = 3, confidence = 30
+[ I2, ] --> [ I1, ] : support = 3, confidence = 100
+[ I1, ] --> [ I4, ] : support = 3, confidence = 30
+[ I4, ] --> [ I1, ] : support = 3, confidence = 50
+[ I2, ] --> [ I3, ] : support = 2, confidence = 66.6667
+[ I3, ] --> [ I2, ] : support = 2, confidence = 25
+[ I2, ] --> [ I4, ] : support = 3, confidence = 100
+[ I4, ] --> [ I2, ] : support = 3, confidence = 50
+[ I3, ] --> [ I4, ] : support = 3, confidence = 37.5
+[ I4, ] --> [ I3, ] : support = 3, confidence = 50
+[ I2, I3, ] --> [ I4, ] : support = 2, confidence = 100
+[ I2, I4, ] --> [ I3, ] : support = 2, confidence = 66.6667
+[ I2, ] --> [ I3, I4, ] : support = 2, confidence = 66.6667
+[ I3, I4, ] --> [ I2, ] : support = 2, confidence = 66.6667
+[ I3, ] --> [ I2, I4, ] : support = 2, confidence = 25
+[ I4, ] --> [ I2, I3, ] : support = 2, confidence = 33.3333

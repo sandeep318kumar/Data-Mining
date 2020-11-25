@@ -1,0 +1,5 @@
+T1 a b d e
+T2 b d
+T3 a c d f
+T4 d d f
+T5 c d e

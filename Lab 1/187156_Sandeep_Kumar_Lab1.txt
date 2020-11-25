@@ -1,0 +1,200 @@
+QUESTION 1:
+CODE:
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+int main()
+{
+	ofstream f;
+    f.open("db.txt");
+    string s;
+    cout<<"enter number of transactions \n";
+    int a;
+    cin>>a;
+    
+    vector<vector<string> >v(a);
+    
+    for(int i=0;i<a;i++){
+    	getline(cin, s);
+    	while(s != "-1"){
+    		v[i].push_back(s);
+    		getline(cin, s);
+		}
+    		
+	}
+	
+	for(int i=0;i<a;i++){
+		string k;
+		k = i + '0';
+		string k1 = "T" + k;
+		f<<"T";
+		f<<k<<" ";
+		for(int j=0;j<v[i].size();j++){
+			f<<v[i][j]<<" ";
+		}
+		f<<endl;
+	}    
+    f.close();
+
+    return 0;
+}
+
+INPUT: 
+a b c e
+b d f
+a c d f
+d f
+c d e
+
+OUTPUT:
+Written in file as 
+T1 a b c e
+T2 b d f
+T3 a c d f
+T4 d f
+T5 c d e
+
+QUESTION 2:
+
+CODE:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	ifstream f;
+	f.open("db.txt");
+	string s;
+	map<char, vector<string> >m;
+	while(getline(f, s)){
+		string t = s.substr(0, 2);
+		cout<<t<<" ";
+		for(int i=2;i<s.size();i++){
+			if(isalpha(s[i])){
+				cout<<s[i]<<" ";
+			}
+		}
+		cout<<endl;
+	}
+	
+    return 0;
+}
+
+OUTPUT:
+T1 a b c e
+T2 b d f
+T3 a c d f
+T4 d f
+T5 c d e
+
+QUESTION 3:
+
+CODE:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	ifstream f;
+	f.open("db.txt");
+	string s;
+	map<char, vector<string> >m;
+	while(getline(f, s)){
+		string t = s.substr(0, 2);
+		for(int i=2;i<s.size();i++){
+			if(isalpha(s[i])){
+				m[s[i]].push_back(t);
+			}
+		}
+	}
+	
+	map<char, vector<string> >::iterator i;
+	for(i = m.begin();i!=m.end();i++){
+		cout<<i->first<<" ";
+		
+		cout<<i->second.size()<<endl;
+	}
+    return 0;
+}
+
+OUTPUT:
+a 2
+b 2
+c 3
+d 4
+e 2
+f 3
+
+QUESTION 4:
+CODE:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	ifstream f;
+	f.open("db.txt");
+	string s;
+	map<char, vector<string> >m;
+	while(getline(f, s)){
+		string t = s.substr(0, 2);
+		for(int i=2;i<s.size();i++){
+			if(isalpha(s[i])){
+				m[s[i]].push_back(t);
+			}
+		}
+	}
+	
+	map<char, vector<string> >::iterator i;
+	for(i = m.begin();i!=m.end();i++){
+		cout<<i->first<<" -> ";
+		for(int j=0;j<i->second.size();j++){
+			cout<<i->second[j]<<" ";
+		}
+		cout<<endl;
+	}
+    return 0;
+}
+
+OUTPUT:
+a -> T1 T3
+b -> T1 T2
+c -> T1 T3 T5
+d -> T2 T3 T4 T5
+e -> T1 T5
+f -> T2 T3 T4
+
+QUESTION 5:
+CODE:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	
+	srand(time(0));
+	ofstream f;
+	f.open("output.txt");
+	
+	string str;
+	int transactions = rand()%20;
+	
+	for(int i=1;i<transactions;i++){
+		int characs = rand()%25;
+		f<<"T"<<i<<" ";
+		for(int j=0;j<characs;j++){
+			char c = rand()%25 +'a';
+			f<<c<<" ";
+		}
+		f<<endl;
+	}
+	f.close();
+	return 0;
+}
+
+OUTPUT:
+T1 x w m b r i p j d q 
+T2 q 
+T3 q c j w h q b u s d k v m y y j h n m n n u b x 
+T4 o u e w n s w r y 
+T5 e x e v 
+
+
+
+
